@@ -76,8 +76,10 @@ typedef enum clrngStatus_ {
 /*! This macro does nothing.
  *  It is defined for convenience when adapting host code for the device.
  */
-#define clrngSetErrorString(err, ...) (err)
-
+ // Variadic macro was replaced by multiple macros
+#define clrngSetErrorString1(err) (err)
+#define clrngSetErrorString2(err, arg1) (err)
+#define clrngSetErrorString3(err, arg1, arg2) (err)
 
 #endif
 

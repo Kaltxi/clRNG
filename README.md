@@ -1,4 +1,7 @@
-# clRNG Library
+# clRNG Library (No variadic macros)
+
+*FORK*: removes the need for variadic macros, which some OpenCL implementaions lack.
+Affects only device OpenCL code (.clh).
 
 A library for uniform random number generation in OpenCL.
 
